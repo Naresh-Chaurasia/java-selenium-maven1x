@@ -16,6 +16,7 @@ public class AppTest {
         System.setProperty("webdriver.chrome.driver",
                 "/Users/nareshchaurasia/nc/GenC/chromedriver-mac-x64/chromedriver");
         driver = new ChromeDriver();
+
     }
 
     @Test
@@ -28,8 +29,8 @@ public class AppTest {
 
     @AfterEach
     public void tearDown() {
-        // if (driver != null) {
-        // driver.quit();
-        // }
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
