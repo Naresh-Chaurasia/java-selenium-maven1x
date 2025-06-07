@@ -15,7 +15,7 @@ public class Test9_ActionsDragDrop {
     public void testMouseHover() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(PREFIX + "actions-demo.html");
+        driver.get(PREFIX + "drag-drop.html");
 
         DemoHelper.pause();
 
@@ -23,11 +23,15 @@ public class Test9_ActionsDragDrop {
 
         WebElement drag = driver.findElement(By.id("drag"));
         WebElement drop = driver.findElement(By.id("drop"));
+
+        String text = drop.getText();
+        System.out.println("Drop text before: " + text);
+
         actions.dragAndDrop(drag, drop).perform();
 
         // Optional validation: check if drop text changed
-        String text = drop.getText();
-        System.out.println("Drop text: " + text);
+        text = drop.getText();
+        System.out.println("Drop text after: " + text);
     }
 
 }

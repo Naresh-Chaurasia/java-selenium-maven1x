@@ -22,6 +22,9 @@ public class Test8_ActionsHoverMouseMenu {
         Actions actions = new Actions(driver);
 
         WebElement menu = driver.findElement(By.id("menu"));
+        
+        
+        
         actions.moveToElement(menu).perform();
     }
 

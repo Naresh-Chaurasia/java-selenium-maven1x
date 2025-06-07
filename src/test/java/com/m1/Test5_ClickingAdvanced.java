@@ -21,6 +21,7 @@ public class Test5_ClickingAdvanced {
         driver.get(PREFIX + "index.html");
 
         WebElement checkbox = driver.findElement(By.id("heard-about"));
+
         Actions actions = new Actions(driver);
 
         // actions.doubleClick(checkbox).perform();
