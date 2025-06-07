@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Test5_SelectingTest {
+public class Test6_Dropdown {
 
     private static final String PREFIX = "file:///" + System.getProperty("user.dir") + "/web/";
 
@@ -24,13 +24,13 @@ public class Test5_SelectingTest {
 
         WebElement period = driver.findElement(By.id("period"));
         Select select = new Select(period);
-        select.selectByValue("6 months");
-        DemoHelper.pause();
-        select.selectByVisibleText("1 Year");
-        DemoHelper.pause();
-        select.selectByIndex(2);
+        // select.selectByValue("2 Years-1");
+        // DemoHelper.pause();
+        select.selectByVisibleText("1 Year and 1 Months");
+        // DemoHelper.pause();
+        // select.selectByIndex(2);
 
-        WebElement result = driver.findElement(By.id("result"));
+        // WebElement result = driver.findElement(By.id("result"));
         // Assert.assertEquals(result.getText(), "After 2 Years you will earn $12.00 on
         // your deposit");
 

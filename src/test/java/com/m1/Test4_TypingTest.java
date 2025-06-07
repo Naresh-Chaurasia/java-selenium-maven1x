@@ -23,15 +23,19 @@ public class Test4_TypingTest {
         WebElement email = driver.findElement(By.id("email"));
         WebElement dob = driver.findElement(By.id("dob"));
 
-        first.sendKeys("Sofia");
-        last.sendKeys("Diaz");
-        email.sendKeys("sofia@email.com");
-        DemoHelper.pause();
-        email.clear();
-        email.sendKeys("sofia@email.com");
+        String s = "How are you?";
+        first.sendKeys("How are you?");
+        first.submit();
+
+        // first.sendKeys("Sofia");
+        // last.sendKeys("Diaz");
+        // email.sendKeys("sofia@email.com");
+        // DemoHelper.pause();
+        // email.clear();
+        // email.sendKeys("sofia@email.com");
         dob.sendKeys("22/03/2022");
 
-        DemoHelper.pause();
-        driver.quit();
+        // DemoHelper.pause();
+        // driver.quit();
     }
 }
