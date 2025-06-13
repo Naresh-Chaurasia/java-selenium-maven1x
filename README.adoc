@@ -18,3 +18,9 @@
     <version>4.11.0</version> <!-- Use the latest version -->
 </dependency>
 ----
+
+---
+
+That's a great idea! Giving students hands-on mini projects after teaching them Selenium basics (like `findElement`, `click`, `sendKeys`, handling dropdowns, etc.) is a powerful way to reinforce learning.
+
+---
