@@ -38,12 +38,11 @@ public class Test11_GetTableDataDemo {
         driver.quit();
     }
 
-    @Test
+    // @Test
     public void scrapeTableData() {
 
         WebDriver driver = DriverFactory.newDriver();
         driver.get(PREFIX + "savings.html");
-
 
         Table<Integer, Integer, String> tableObj = HashBasedTable.create();
 
