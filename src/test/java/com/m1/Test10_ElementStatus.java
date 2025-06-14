@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import com.utils.DemoHelper;
+
 public class Test10_ElementStatus {
 
     private static final String PREFIX = "file:///" + System.getProperty("user.dir") + "/web/";

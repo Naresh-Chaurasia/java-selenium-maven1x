@@ -1,4 +1,4 @@
-package com.m1;
+package com.utils;
 
 public class DemoHelper {
 

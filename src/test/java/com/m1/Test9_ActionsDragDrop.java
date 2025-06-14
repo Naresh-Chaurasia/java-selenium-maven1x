@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import com.utils.DemoHelper;
+
 public class Test9_ActionsDragDrop {
 
     private static final String PREFIX = "file:///" + System.getProperty("user.dir") + "/web/";
